@@ -8,4 +8,5 @@ import java.util.List;
 @Service
 public interface TaskListService {
     List<TaskList> listTaskList();
+    TaskList createTaskList(TaskList taskList);
 }

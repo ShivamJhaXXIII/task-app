@@ -23,7 +23,7 @@ public class TaskListMapperImpl implements TaskListMapper {
     public TaskList fromDto(TaskListDto taskListDto) {
         return new TaskList(
                 taskListDto.id(),
-                taskListDto.name(),
+                taskListDto.title(),
                 taskListDto.description(),
                 Optional.ofNullable(taskListDto.tasks())
                         .map(tasks -> tasks.stream()
